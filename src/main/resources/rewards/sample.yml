@@ -1,0 +1,53 @@
+key: titan
+name: "Titan Donation"
+player_message: "Thank you for donating <%player%>!"
+broadcast: "<%player%> has donated to help keep the server running!"
+cash: 0
+items:
+  diamonds:
+    material: DIAMOND
+    amount: 10
+  villager_eggs:
+    material: VILLAGER_EGG
+    custom_name: "Villager Eggs"
+    custom_lore:
+      - "&fVillager eggs given as a reward from Titan Donation"
+      - "Only to be used by &b<%player%>"
+      - "&cNot to be sold or given away."
+    amount: 2
+  spider_spawner:
+    material: SPAWNER
+    custom_name: "Spider Spawner"
+    custom_lore:
+      - "&fSpider Spawner given as a reward from Titan Donation"
+      - "Only to be used by &b<%player%>"
+      - "&cNot to be sold or given away."
+    amount: 1
+    entity: SPIDER
+  pig_spawner:
+    material: SPAWNER
+    custom_name: "Pig Spawner"
+    custom_lore:
+      - "&fPig Spawner given as a reward from Titan Donation"
+      - "Only to be used by &b<%player%>.  Oink oink."
+      - "&cNot to be sold or given away."
+    amount: 1
+    entity: PIG
+  domain_block:
+    blob: |
+      i:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2567
+        type: DEAD_TUBE_CORAL_BLOCK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §aSnitch
+          lore:
+          - Alerts the owner of the
+          - field if a player enters
+          - or leaves the field
+groups:
+  add:
+    - titan
+  remove: []
